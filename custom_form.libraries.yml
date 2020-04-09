@@ -1,0 +1,12 @@
+custom_style:
+  version: 1.x
+  css:
+     theme:
+        assets/css/custom.css: {}
+
+  js:
+    assets/js/custom.js: {}
+
+  dependencies:
+      - core/jquery
+      - core/drupalSettings

@@ -1,0 +1,54 @@
+<section class="custom-form">
+    {% if message['header_image'] %}
+        <div class="banner" style="background-image:url('/{{ message['header_image'] }}'); ">
+        </div>
+    {% endif %}
+
+    <ul>
+        {% if message['title'] %}
+            <li>{{ message['title'] }}</li>
+        {% endif %}
+
+        {% if message['content_type'] %}
+            <li>{{ message['content_type'] }}</li>
+        {% endif %}
+
+        {% if message['email'] %}
+            <li><a href="mailto:{{ message['email'] }}">{{ message['email'] }}</a></li>
+        {% endif %}
+
+        {% if message['phone'] %}
+            <li><a href="tel:{{ message['phone'] }}">{{ message['phone'] }}</a></li>
+        {% endif %}
+
+        {% if message['date_birth'] %}
+            <li>{{ message['date_birth'] }}</li>
+        {% endif %}
+
+        {% if message['gender'] %}
+            <li>{{ message['gender'] }}</li>
+        {% endif %}
+
+        {% if message['radios'] %}
+            <li>{{ message['radios'] }}</li>
+        {% endif %}
+    </ul>
+
+    {% if message['description'] %}
+        <div class="custom_description">
+            {{ message['description']|raw }}
+        </div>
+    {% endif %}
+
+    {% if message['image'] %}
+        <div class="custom_img">
+            <img src="{{ message['image'] }}" class="custom_image">
+        </div>
+    {% endif %}
+
+    {% if message['footer_image'] %}
+        <div class="footer" style="background-image:url('/{{ message['footer_image'] }}'); ">
+        </div>
+    {% endif %}
+
+</section>

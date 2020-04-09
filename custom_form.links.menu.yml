@@ -1,0 +1,5 @@
+form.config:
+  title: 'Custom Form  API'
+  description: 'Configue Custom Form API.'
+  parent: system.admin_config_system
+  route_name: form.custom_form

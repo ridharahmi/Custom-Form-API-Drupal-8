@@ -1,0 +1,15 @@
+form.custom_form:
+  path: '/admin/custom-form'
+  defaults:
+    _form: '\Drupal\custom_form\Form\CustomForm'
+    _title: 'Custom Form API '
+  requirements:
+    _permission: 'access content'
+
+form.preview:
+  path: '/custom-form/preview'
+  defaults:
+    _controller: '\Drupal\custom_form\Controller\FormController::preview'
+    _title: 'Preview Custom Form'
+  requirements:
+    _permission: 'access content'
